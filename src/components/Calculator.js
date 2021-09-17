@@ -1,27 +1,31 @@
 import React from 'react';
 import '../App.css';
+import PropTypes from 'prop-types';
 
+function CalcButton(props) {
+  return (
+    <button type="button" className={props.color}>
+      {props.content}
+    </button>
+  );
+}
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>nd save to reload.</p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <CalcButton content="1" color="white" />
       </div>
     );
   }
 }
 
+Calculator.propTypes = {
+  content: PropTypes.string,
+  color: PropTypes.string,
+};
 export default Calculator;
