@@ -3,17 +3,91 @@
   margin: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  grid-template-areas:
+    'result result result result'
+    'ac plusminus  per division'
+    'seven eight nine multi'
+    'four five six minus'
+    'one two three plus'
+    'cero cero dot equal';
 }
 
-.App-link {
-  color: #61dafb;
+.ac {
+  grid-area: ac;
+}
+
+.plusminus {
+  grid-area: plusminus;
+}
+
+.percent {
+  grid-area: per;
+}
+
+.division {
+  grid-area: division;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.cero {
+  grid-area: cero;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.multi {
+  grid-area: multi;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.equal {
+  grid-area: equal;
 }
