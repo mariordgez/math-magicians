@@ -115,3 +115,11 @@
 .calc-result {
   margin-right: 10px;
 }
+
+.white:hover {
+  background-color: lightgray;
+}
+
+.orange:hover {
+  background-color: darkorange;
+}
