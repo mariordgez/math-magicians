@@ -1,5 +1,3 @@
-/* eslint-disable  react/jsx-one-expression-per-line */
-
 import React, { useState } from 'react';
 import '../App.css';
 import CalcButton from './CalcButton';
