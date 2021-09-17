@@ -1,31 +1,23 @@
 import React from 'react';
 import '../App.css';
 import PropTypes from 'prop-types';
-import calculate from '../logic/calculate';
-import total from './total';
 
-let calculator = { total: 0, next: null, operation: null };
-
-const calc = (e) => {
-  const result = document.getElementById('result');
-  calculator = calculate(calculator, e.target.innerText);
-  result.innerHTML = total(calculator) + (calculator.operation || '') + (calculator.next || '');
-};
-
-const CalcButton = ({ color, content }) => (
+const CalcButton = ({ color, content, calc }) => (
   <button onClick={calc} type="button" className={color}>
     {content}
   </button>
 );
 
 CalcButton.propTypes = {
-  content: PropTypes.string,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   color: PropTypes.string,
+  calc: PropTypes.func,
 };
 
 CalcButton.defaultProps = {
   content: '1',
   color: 'white',
+  calc: PropTypes.func,
 };
 
 export default CalcButton;
