@@ -32,43 +32,43 @@
   grid-area: division;
 }
 
-.num1 {
+.one {
   grid-area: one;
 }
 
-.num2 {
+.two {
   grid-area: two;
 }
 
-.num3 {
+.three {
   grid-area: three;
 }
 
-.num4 {
+.four {
   grid-area: four;
 }
 
-.num5 {
+.five {
   grid-area: five;
 }
 
-.num6 {
+.six {
   grid-area: six;
 }
 
-.num7 {
+.seven {
   grid-area: seven;
 }
 
-.num8 {
+.eight {
   grid-area: eight;
 }
 
-.num9 {
+.nine {
   grid-area: nine;
 }
 
-.num0 {
+.cero {
   grid-area: cero;
 }
 
@@ -114,12 +114,4 @@
 
 .calc-result {
   margin-right: 10px;
-}
-
-.white:hover {
-  background-color: lightgray;
-}
-
-.orange:hover {
-  background-color: darkorange;
 }
