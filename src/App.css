@@ -32,43 +32,43 @@
   grid-area: division;
 }
 
-.one {
+.num1 {
   grid-area: one;
 }
 
-.two {
+.num2 {
   grid-area: two;
 }
 
-.three {
+.num3 {
   grid-area: three;
 }
 
-.four {
+.num4 {
   grid-area: four;
 }
 
-.five {
+.num5 {
   grid-area: five;
 }
 
-.six {
+.num6 {
   grid-area: six;
 }
 
-.seven {
+.num7 {
   grid-area: seven;
 }
 
-.eight {
+.num8 {
   grid-area: eight;
 }
 
-.nine {
+.num9 {
   grid-area: nine;
 }
 
-.cero {
+.num0 {
   grid-area: cero;
 }
 
