@@ -1,5 +1,3 @@
-import React from 'react';
-import '../App.css';
 import CalcButton from './CalcButton';
 
 const calcNumbers = () => {
