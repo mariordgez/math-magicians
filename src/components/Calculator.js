@@ -11,22 +11,25 @@ const Calculator = () => {
   const calc = (e) => setCalculator((calc) => calculate(calc, e.target.innerText));
 
   return (
-    <div className="container">
-      <div className="gray result">
-        <p className="calc-result" id="result">
-          {total(calculator) + (calculator.operation || '') + (calculator.next || '')}
-        </p>
+    <div>
+      <h1 className="title">Welcome to the Math Magicians App! </h1>
+      <div className="container">
+        <div className="gray result">
+          <p className="calc-result" id="result">
+            {total(calculator) + (calculator.operation || '') + (calculator.next || '')}
+          </p>
+        </div>
+        <CalcNumbers calc={calc} />
+        <CalcButton content="AC" color="white calc-btn ac" calc={calc} />
+        <CalcButton content="+/-" color="white calc-btn plusminus" calc={calc} />
+        <CalcButton content="%" color="white calc-btn percent" calc={calc} />
+        <CalcButton content="÷" color="orange calc-btn division" calc={calc} />
+        <CalcButton content="x" color="orange calc-btn multi" calc={calc} />
+        <CalcButton content="-" color="orange calc-btn minus" calc={calc} />
+        <CalcButton content="+" color="orange calc-btn plus" calc={calc} />
+        <CalcButton content="." color="white calc-btn dot" calc={calc} />
+        <CalcButton content="=" color="orange calc-btn equal" calc={calc} />
       </div>
-      <CalcNumbers calc={calc} />
-      <CalcButton content="AC" color="white calc-btn ac" calc={calc} />
-      <CalcButton content="+/-" color="white calc-btn plusminus" calc={calc} />
-      <CalcButton content="%" color="white calc-btn percent" calc={calc} />
-      <CalcButton content="÷" color="orange calc-btn division" calc={calc} />
-      <CalcButton content="x" color="orange calc-btn multi" calc={calc} />
-      <CalcButton content="-" color="orange calc-btn minus" calc={calc} />
-      <CalcButton content="+" color="orange calc-btn plus" calc={calc} />
-      <CalcButton content="." color="white calc-btn dot" calc={calc} />
-      <CalcButton content="=" color="orange calc-btn equal" calc={calc} />
     </div>
   );
 };
