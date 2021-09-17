@@ -3,28 +3,48 @@ import '../App.css';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
-const CalcButton = ({ color, content }) => (
-  <button type="button" className={color}>
-    {content}
-  </button>
-);
 const Calculator = () => {
-  const calculator = { total: null, next: null, operation: null };
+  let calculator = { total: 0, next: null, operation: null };
+  const total = (cal) => {
+    if (cal.total === null && cal.next !== null) return '';
+    if (cal.total == null) return '0';
+
+    return cal.total;
+  };
   const calc = (e) => {
-    e.preventDefault();
-    calculate(calculator, e.target.content);
+    const result = document.getElementById('result');
+    console.log(calculator.total);
+    console.log(calculator.next);
+    console.log(calculator.operation);
+
+    console.log(e.target.innerText);
+    calculator = calculate(calculator, e.target.innerText);
+    result.innerHTML = total(calculator) + (calculator.operation || '') + (calculator.next || '');
+  };
+  const CalcButton = ({ color, content }) => (
+    <button onClick={calc} type="button" className={color}>
+      {content}
+    </button>
+  );
+
+  CalcButton.propTypes = {
+    content: PropTypes.string,
+    color: PropTypes.string,
+  };
+
+  CalcButton.defaultProps = {
+    content: '1',
+    color: 'white',
   };
   return (
     <div className="container">
       <div className="gray result">
-        <p className="calc-result">this.calculator.total</p>
+        <p className="result" id="result">
+          {calculator.total}
+        </p>
       </div>
       <CalcButton content="AC" onClick={calc} color="white calc-btn ac" />
-      <CalcButton
-        content="+/-"
-        onClick={calc}
-        color="white calc-btn plusminus"
-      />
+      <CalcButton content="+/-" onClick={calc} color="white calc-btn plusminus" />
       <CalcButton content="%" onClick={calc} color="white calc-btn percent" />
       <CalcButton content="÷" onClick={calc} color="orange calc-btn division" />
       <CalcButton content="1" onClick={calc} color="white calc-btn one" />
@@ -44,16 +64,6 @@ const Calculator = () => {
       <CalcButton content="=" onClick={calc} color="orange calc-btn equal" />
     </div>
   );
-};
-
-CalcButton.propTypes = {
-  content: PropTypes.string,
-  color: PropTypes.string,
-};
-
-CalcButton.defaultProps = {
-  content: '1',
-  color: 'white',
 };
 
 export default Calculator;
