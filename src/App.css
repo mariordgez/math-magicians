@@ -1,117 +1,38 @@
-.container {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
-  gap: 0;
-  display: grid;
-  grid-template-columns: 150px 150px 150px 150px;
-  grid-template-rows: 50px 50px 50px 50px 50px 50px;
-  grid-template-areas:
-    'result result result result'
-    'ac plusminus  per division'
-    'seven eight nine multi'
-    'four five six minus'
-    'one two three plus'
-    'cero cero dot equal';
+.App {
+  text-align: center;
 }
 
-.ac {
-  grid-area: ac;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.plusminus {
-  grid-area: plusminus;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.percent {
-  grid-area: per;
-}
-
-.division {
-  grid-area: division;
-}
-
-.one {
-  grid-area: one;
-}
-
-.two {
-  grid-area: two;
-}
-
-.three {
-  grid-area: three;
-}
-
-.four {
-  grid-area: four;
-}
-
-.five {
-  grid-area: five;
-}
-
-.six {
-  grid-area: six;
-}
-
-.seven {
-  grid-area: seven;
-}
-
-.eight {
-  grid-area: eight;
-}
-
-.nine {
-  grid-area: nine;
-}
-
-.cero {
-  grid-area: cero;
-}
-
-.dot {
-  grid-area: dot;
-}
-
-.multi {
-  grid-area: multi;
-}
-
-.plus {
-  grid-area: plus;
-}
-
-.minus {
-  grid-area: minus;
-}
-
-.equal {
-  grid-area: equal;
-}
-
-.white {
-  background-color: white;
-}
-
-.orange {
-  background-color: orange;
-}
-
-.gray {
-  background-color: gray;
-}
-
-.result {
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  color: white;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
-  grid-area: result;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.calc-result {
-  margin-right: 10px;
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
