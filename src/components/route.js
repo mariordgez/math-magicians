@@ -2,6 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router, Switch, Route, Link,
 } from 'react-router-dom';
+import Calculator from './Calculator';
 
 export default function Routes() {
   return (
@@ -40,7 +41,7 @@ export default function Routes() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (<Calculator />);
 }
 
 function About() {

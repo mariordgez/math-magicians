@@ -4,7 +4,6 @@ import CalcButton from './CalcButton';
 import CalcNumbers from './CalcNumbers';
 import calculate from '../logic/calculate';
 import total from './total';
-import Routes from './route';
 
 const Calculator = () => {
   const [calculator, setCalculator] = useState({ total: 0, next: null, operation: null });
@@ -13,7 +12,6 @@ const Calculator = () => {
 
   return (
     <div>
-      <Routes />
       <h1 className="title">Welcome to the Math Magicians App! </h1>
       <div className="container">
         <div className="gray result">
