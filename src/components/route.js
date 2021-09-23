@@ -8,8 +8,9 @@ export default function Routes() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
+        <nav className="navbar">
+          <h1>Math Mathicians</h1>
+          <ul className="navbar-list">
             <li>
               <Link to="/">Home</Link>
             </li>
