@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import Calculator from './Calculator';
 import Home from './Home';
+import Quote from './Quote';
 
 export default function Routes() {
   return (
@@ -40,8 +41,4 @@ export default function Routes() {
       </div>
     </Router>
   );
-}
-
-function Quote() {
-  return <h2>Quote</h2>;
 }
