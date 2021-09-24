@@ -1,11 +1,15 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Route from '../components/Route';
+import Home from '../components/Home';
 
-describe('Test Calculator Result', () => {
-  test('Result to be in the document', () => {
-    render(<Route />);
-    const elementSeven = screen.getByTestId('homepage');
-    expect(elementSeven).toBeInTheDocument();
+describe('Test Calculator Homepage', () => {
+  test('Home element id to exist', () => {
+    render(<Home />);
+    expect(screen.getByTestId('homepage')).toBeInTheDocument();
+  });
+
+  test('Text element to exist', () => {
+    render(<Home />);
+    expect(screen.getByText('Welcome to our page!')).toBeInTheDocument();
   });
 });
