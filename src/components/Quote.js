@@ -10,8 +10,8 @@ const Quote = () => {
     'What is mathematics? It is only a systematic effort of solving puzzles posed by nature.— Shakuntala Devi',
   ];
   return (
-    <div className="home">
-      <h2>{quoteArr[rnd]}</h2>
+    <div className="calc">
+      <h3>{quoteArr[rnd]}</h3>
     </div>
   );
 };
