@@ -159,7 +159,6 @@ body {
 .home {
   margin: 35px 15px;
   display: flex;
-
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
