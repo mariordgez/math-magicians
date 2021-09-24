@@ -149,14 +149,27 @@ body {
   align-items: center;
 }
 
-.home {
+.calc {
   margin-top: 35px;
   display: flex;
   justify-content: space-around;
   gap: 20px;
 }
 
+.home {
+  margin: 35px 15px;
+  display: flex;
+
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
 a {
   text-decoration: none;
   color: white;
+}
+
+.left {
+  text-align: start;
 }

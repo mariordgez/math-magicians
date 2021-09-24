@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router, Switch, Route, Link,
 } from 'react-router-dom';
 import Calculator from './Calculator';
+import Home from './Home';
 
 export default function Routes() {
   return (
@@ -15,10 +16,10 @@ export default function Routes() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/calculator">Calculator</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/quote">Quote</Link>
             </li>
           </ul>
         </nav>
@@ -26,11 +27,11 @@ export default function Routes() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/calculator">
+            <Calculator />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/quote">
+            <Quote />
           </Route>
           <Route path="/">
             <Home />
@@ -41,14 +42,6 @@ export default function Routes() {
   );
 }
 
-function Home() {
-  return (<Calculator />);
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
+function Quote() {
+  return <h2>Quote</h2>;
 }

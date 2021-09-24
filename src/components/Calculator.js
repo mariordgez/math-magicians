@@ -11,7 +11,7 @@ const Calculator = () => {
   const calc = (e) => setCalculator((calc) => calculate(calc, e.target.innerText));
 
   return (
-    <div className="home">
+    <div className="calc">
       <div>
         <h2>Lets do some math!</h2>
       </div>
