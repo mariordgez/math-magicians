@@ -1,38 +1,174 @@
-.App {
+body {
+  background-image: linear-gradient(120deg, #141108, #fff);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+}
+
+.container {
+  gap: 0;
+  display: grid;
+  min-width: 250px;
+  width: 50%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  grid-template-areas:
+    'result result result result'
+    'ac plusminus  per division'
+    'seven eight nine multi'
+    'four five six minus'
+    'one two three plus'
+    'cero cero dot equal';
+}
+
+.ac {
+  grid-area: ac;
+}
+
+.plusminus {
+  grid-area: plusminus;
+}
+
+.percent {
+  grid-area: per;
+}
+
+.division {
+  grid-area: division;
+}
+
+.num1 {
+  grid-area: one;
+}
+
+.num2 {
+  grid-area: two;
+}
+
+.num3 {
+  grid-area: three;
+}
+
+.num4 {
+  grid-area: four;
+}
+
+.num5 {
+  grid-area: five;
+}
+
+.num6 {
+  grid-area: six;
+}
+
+.num7 {
+  grid-area: seven;
+}
+
+.num8 {
+  grid-area: eight;
+}
+
+.num9 {
+  grid-area: nine;
+}
+
+.num0 {
+  grid-area: cero;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.multi {
+  grid-area: multi;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+.white {
+  background-color: white;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.result {
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: result;
+}
+
+.calc-result {
+  margin-right: 10px;
+}
+
+.white:hover {
+  background-color: lightgray;
+}
+
+.orange:hover {
+  background-color: darkorange;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  list-style: none;
+  gap: 10px;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calc {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.home {
+  margin: 35px 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.left {
+  text-align: start;
 }
