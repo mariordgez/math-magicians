@@ -23,112 +23,39 @@ body {
     'cero cero dot equal';
 }
 
-.ac {
-  grid-area: ac;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.plusminus {
-  grid-area: plusminus;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.percent {
-  grid-area: per;
-}
-
-.division {
-  grid-area: division;
-}
-
-.num1 {
-  grid-area: one;
-}
-
-.num2 {
-  grid-area: two;
-}
-
-.num3 {
-  grid-area: three;
-}
-
-.num4 {
-  grid-area: four;
-}
-
-.num5 {
-  grid-area: five;
-}
-
-.num6 {
-  grid-area: six;
-}
-
-.num7 {
-  grid-area: seven;
-}
-
-.num8 {
-  grid-area: eight;
-}
-
-.num9 {
-  grid-area: nine;
-}
-
-.num0 {
-  grid-area: cero;
-}
-
-.dot {
-  grid-area: dot;
-}
-
-.multi {
-  grid-area: multi;
-}
-
-.plus {
-  grid-area: plus;
-}
-
-.minus {
-  grid-area: minus;
-}
-
-.equal {
-  grid-area: equal;
-}
-
-.white {
-  background-color: white;
-}
-
-.orange {
-  background-color: orange;
-}
-
-.gray {
-  background-color: gray;
-}
-
-.result {
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  color: white;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
-  grid-area: result;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.calc-result {
-  margin-right: 10px;
+.App-link {
+  color: #61dafb;
 }
 
-.white:hover {
-  background-color: lightgray;
-}
-
-.orange:hover {
-  background-color: darkorange;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .title {
