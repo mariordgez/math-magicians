@@ -11,8 +11,10 @@ const Calculator = () => {
   const calc = (e) => setCalculator((calc) => calculate(calc, e.target.innerText));
 
   return (
-    <div>
-      <h1 className="title">Welcome to the Math Magicians App! </h1>
+    <div className="home">
+      <div>
+        <h2>Let&apos;s do some math!</h2>
+      </div>
       <div className="container">
         <div className="gray result">
           <p className="calc-result" id="result">
