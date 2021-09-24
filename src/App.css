@@ -8,11 +8,11 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   gap: 0;
   display: grid;
-  grid-template-columns: 125px 125px 125px 125px;
+  min-width: 250px;
+  width: 50%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 50px 50px 50px 50px 50px 50px;
   grid-template-areas:
     'result result result result'
@@ -150,10 +150,10 @@ body {
 }
 
 .home {
+  margin-top: 35px;
   display: flex;
   justify-content: space-around;
   gap: 20px;
-  margin: 10px 10px;
 }
 
 a {

@@ -13,7 +13,7 @@ const Calculator = () => {
   return (
     <div className="home">
       <div>
-        <h2>Let&apos;s do some math!</h2>
+        <h2>Lets do some math!</h2>
       </div>
       <div className="container">
         <div className="gray result">
