@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import CalcNumbers from '../components/CalcNumbers';
 
-describe('Test Calcbutton function', () => {
-  test('All numbers are returned by CalcNumbers', () => {
+describe('Test CalcNumbers function', () => {
+  test('All number buttons exist', () => {
     render(<CalcNumbers />);
     expect(screen.getByText('0')).toBeInTheDocument();
     expect(screen.getByText('1')).toBeInTheDocument();
@@ -16,7 +16,7 @@ describe('Test Calcbutton function', () => {
     expect(screen.getByText('8')).toBeInTheDocument();
     expect(screen.getByText('9')).toBeInTheDocument();
   });
-  test('Classes from number are returned by CalcNumbers', () => {
+  test('Number button has classes', () => {
     render(<CalcNumbers />);
     expect(screen.getByText('0')).toHaveClass('white calc-btn num0');
   });

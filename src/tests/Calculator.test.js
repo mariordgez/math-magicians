@@ -1,7 +1,6 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import Calculator from '../components/Calculator';
-import React from 'react';
 
 describe('Test Calculator', () => {
   test('Expect correct text to render', () => {
