@@ -11,7 +11,7 @@ export default function Routes() {
     <Router>
       <div>
         <nav className="navbar">
-          <h1>Math Mathicians</h1>
+          <h1>Math Magicians</h1>
           <ul className="navbar-list">
             <li>
               <Link to="/">Home</Link>
