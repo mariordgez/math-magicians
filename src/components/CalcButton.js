@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import PropTypes from 'prop-types';
 
-const CalcButton = ({ color, content, calc, key }) => (
+const CalcButton = ( { color, content, calc, key } ) => (
   <button id={key} onClick={calc} type="button" className={color}>
     {content}
   </button>

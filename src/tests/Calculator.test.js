@@ -1,8 +1,8 @@
 /* eslint-disable no-restricted-syntax */
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Calculator from '../components/Calculator';
-import React from 'react';
 
 describe('Test Calculator', () => {
   test('Expect correct text to render', () => {
