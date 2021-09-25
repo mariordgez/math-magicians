@@ -68,4 +68,15 @@ describe('Testing calculate logic function', () => {
     expect(obj.next).toEqual(null);
     expect(obj.operation).toEqual(null);
   });
+  test('Check functionality of +/- button', () => {
+    let obj = { total: null, next: null, operation: null };
+    obj = calculate(obj, '30');
+    obj = calculate(obj, '.');
+    obj = calculate(obj, '5');
+    obj = calculate(obj, '+');
+    obj = calculate(obj, '20');
+    obj = calculate(obj, '=');
+    obj = calculate(obj, '+/-');
+    expect(obj.total).toEqual('-50.5');
+  });
 });
