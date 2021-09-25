@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Calculator from '../components/Calculator';
@@ -30,14 +31,5 @@ describe('Test Calculator', () => {
     expect(screen.getByText('-')).toBeInTheDocument();
     expect(screen.getByText('x')).toBeInTheDocument();
     expect(screen.getByText('%')).toBeInTheDocument();
-  });
-  test('23 x 3', () => {
-    render(<Calculator />);
-
-    fireEvent.click(screen.getByText('2'));
-    fireEvent.click(screen.getByText('3'));
-    fireEvent.click(screen.getByText('3'));
-
-    expect(screen.getByText('233')).toBeInTheDocument();
   });
 });

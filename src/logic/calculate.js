@@ -1,6 +1,9 @@
 import operate from './operate';
 
-const isNumber = (item) => !!item.match(/[0-9]+/);
+function isNumber(item) {
+  return !!item.match(/[0-9]+/);
+}
+
 /**
  * Given a button name and a calculator data object, return an updated
  * calculator data object.
