@@ -1,5 +1,5 @@
 /* eslint-disable no-restricted-syntax */
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Calculator from '../components/Calculator';
 import React from 'react';

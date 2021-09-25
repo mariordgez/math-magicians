@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import CalcNumbers from '../components/CalcNumbers';
 
 describe('Test Calcbutton function', () => {
-  test('Home element id to exist', () => {
+  test('All numbers are returned by CalcNumbers', () => {
     render(<CalcNumbers />);
     expect(screen.getByText('0')).toBeInTheDocument();
     expect(screen.getByText('1')).toBeInTheDocument();
@@ -16,7 +16,7 @@ describe('Test Calcbutton function', () => {
     expect(screen.getByText('8')).toBeInTheDocument();
     expect(screen.getByText('9')).toBeInTheDocument();
   });
-  test('Home element id to exist', () => {
+  test('Classes from number are returned by CalcNumbers', () => {
     render(<CalcNumbers />);
     expect(screen.getByText('0')).toHaveClass('white calc-btn num0');
   });
