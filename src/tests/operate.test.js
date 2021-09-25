@@ -32,4 +32,10 @@ describe('Testing operate logic function', () => {
     const operationDivide = '÷';
     expect(operate(firstAmount, secondAmount, operationDivide)).toBe('1');
   });
+  test('Expect 44mod5 to equal 4', () => {
+    const firstAmount = 44;
+    const secondAmount = 5;
+    const operationDivide = '%';
+    expect(operate(firstAmount, secondAmount, operationDivide)).toBe('4');
+  });
 });
