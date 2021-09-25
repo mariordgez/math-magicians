@@ -47,6 +47,13 @@ doesn't, you can just access `localhost:3030` to see the project.
 - Twitter: [@MarioRo75396624](https://twitter.com/MarioRo75396624)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/mario-alberto-rodriguez-cota-a2860a205)
 
+👤 **Dante Alonso**
+
+- GitHub: [@DanteAlonsoHT](https://github.com/DanteAlonsoHT)
+- Twitter: [@dante_dante1](https://twitter.com/dante_dante1)
+- LinkedIn: [Dante Alonso](https://www.linkedin.com/in/dante-alonso/)
+
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!

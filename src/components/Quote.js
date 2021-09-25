@@ -11,7 +11,7 @@ const Quote = () => {
   ];
   return (
     <div className="calc">
-      <h3>{quoteArr[rnd]}</h3>
+      <h3 data-testid="quotepage">{quoteArr[rnd]}</h3>
     </div>
   );
 };

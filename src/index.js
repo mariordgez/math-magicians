@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Routes from './components/route';
+import Routes from './components/Route';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(<Routes />, document.getElementById('root'));

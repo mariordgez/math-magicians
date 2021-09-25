@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 
 const Home = () => (
-  <div className="home">
+  <div className="home" data-testid="homepage">
     <h2>Welcome to our page!</h2>
     <p className="left">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

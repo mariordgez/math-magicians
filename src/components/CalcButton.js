@@ -3,7 +3,7 @@ import '../App.css';
 import PropTypes from 'prop-types';
 
 const CalcButton = ({ color, content, calc }) => (
-  <button onClick={calc} type="button" className={color}>
+  <button data-testid={content} onClick={calc} type="button" className={color}>
     {content}
   </button>
 );
