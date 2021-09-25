@@ -55,4 +55,17 @@ describe('Testing calculate logic function', () => {
     obj = calculate(obj, '=');
     expect(obj.total).toEqual('50.5');
   });
+  test('Check functionality of AC button', () => {
+    let obj = { total: null, next: null, operation: null };
+    obj = calculate(obj, '30');
+    obj = calculate(obj, '.');
+    obj = calculate(obj, '5');
+    obj = calculate(obj, '+');
+    obj = calculate(obj, '20');
+    obj = calculate(obj, '=');
+    obj = calculate(obj, 'AC');
+    expect(obj.total).toEqual(null);
+    expect(obj.next).toEqual(null);
+    expect(obj.operation).toEqual(null);
+  });
 });
